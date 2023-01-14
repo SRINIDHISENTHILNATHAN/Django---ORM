@@ -52,7 +52,7 @@ class StudentdetailAdmin(admin.ModelAdmin):
 
 ## OUTPUT
 
-![image](https://user-images.githubusercontent.com/121373170/212477536-ff7681be-4fce-4156-ac8e-b7e6dd381a59.png)
+![image](https://user-images.githubusercontent.com/121373170/212480249-a3203e5b-d805-457c-a3d6-a1bcccad3706.png)
 
 
 ## RESULT
