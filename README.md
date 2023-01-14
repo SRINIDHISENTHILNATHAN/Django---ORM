@@ -5,25 +5,55 @@ To develop a Django application to store and retrieve data from a database using
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
+![image](https://user-images.githubusercontent.com/121373170/212477332-8ba731b5-dcab-4e5e-a49b-42c6adb377a4.png)
 
 ## DESIGN STEPS
 
 ### STEP 1:
+creating a table using patient details in ORM
 
 ### STEP 2:
+upload the python code
 
 ### STEP 3:
-
-Write your own steps
+push the code to github
 
 ## PROGRAM
 
-Include your code here
+```
+admin.py:
+
+from django.contrib import admin
+from .models import Studentdetail,StudentdetailAdmin
+
+
+admin.site.register(Studentdetail,StudentdetailAdmin)
+# Register your models here.
+
+
+models.py:
+
+from django.db import models
+from django.contrib import  admin
+
+
+#Create your models here.
+#Create your models here.
+# Create your models here.
+class Studentdetail(models.Model):
+    referencenumber = models.CharField(max_length=10, primary_key=True , help_text="your reference no ")
+    name= models.CharField(max_length=100)
+    department = models.CharField(max_length=200)
+    age=models.IntegerField()
+    email=models.EmailField()
+class StudentdetailAdmin(admin.ModelAdmin):
+    list_display = ('RefNum', 'Name', 'Age', 'Email','Dept')
+```
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![image](https://user-images.githubusercontent.com/121373170/212477536-ff7681be-4fce-4156-ac8e-b7e6dd381a59.png)
 
 
 ## RESULT
+Thus the experiment was executed successfully.
